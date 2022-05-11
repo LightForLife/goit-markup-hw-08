@@ -1,0 +1,44 @@
+.section.service {
+  padding-top: 0;
+}
+
+.service-title {
+  margin-bottom: 50px;
+}
+
+.service-list {
+  display: flex;
+}
+
+.service-list__item {
+  position: relative;
+
+  & + & {
+    margin-left: var(--main-flex-gap);
+  }
+}
+
+.service-list__label {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+}
+
+.service-list__text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  height: 70px;
+
+  text-align: center;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+
+  color: #ffffff;
+  background: rgba(47, 48, 58, 0.8);
+}

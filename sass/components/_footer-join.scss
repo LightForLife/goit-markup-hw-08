@@ -1,0 +1,51 @@
+.footer-container {
+  display: flex;
+  align-items: baseline;
+}
+
+.join {
+  margin-left: 70px;
+}
+
+.join-list {
+  display: flex;
+  justify-content: center;
+}
+
+.join-item {
+  & + & {
+    margin-left: 10px;
+  }
+}
+
+.join-title {
+  margin-bottom: 20px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--first-bg-coor);
+}
+
+.join-link {
+  width: 44px;
+  height: 44px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: background-color var(--timing-function);
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-text-color);
+  }
+}
+
+.footer-icon {
+  fill: var(--first-bg-coor);
+}

@@ -1,0 +1,50 @@
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  background: var(--second-bg-coor);
+}
+
+.footer-box {
+  flex-grow: 1;
+}
+
+.footer-logo {
+  display: block;
+  margin-bottom: 20px;
+
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+}
+
+.footer-item {
+  margin-bottom: 9px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.footer-address {
+  color: #ffffff;
+}
+
+.footer-contact {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.contact-text {
+  display: block;
+
+  transition: color var(--timing-function);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-text-color);
+  }
+}

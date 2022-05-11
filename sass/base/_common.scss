@@ -1,0 +1,32 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  color: var(--first-main-color);
+  font-size: 14px;
+  background-color: var(--first-bg-coor);
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.contact-text {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
