@@ -1,0 +1,138 @@
+.header__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+
+  border: none;
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+.mob-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+
+  padding-top: 48px;
+  padding-bottom: 48px;
+  //   padding-right: 40px;
+  padding-left: 40px;
+
+  background: #ffffff;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08),
+    0px 1px 3px rgba(0, 0, 0, 0.16);
+
+  transform: translateX(100%);
+  transition: transform 250ms ease-in-out;
+}
+
+.mob-menu.is-open {
+  transform: translate(0);
+}
+
+.mob-menu__btn-close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  border-color: transparent;
+  cursor: pointer;
+
+  border: none;
+}
+
+.menu-navigation__link {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.18;
+  letter-spacing: 0.02em;
+  color: var(--first-main-color);
+}
+
+.current {
+  color: #2196f3;
+}
+
+.menu-navigation__item + .menu-navigation__item {
+  margin-top: 32px;
+}
+
+.menu-navigation__link {
+}
+
+.menu-contact {
+  margin-top: 306px;
+}
+
+.menu-tel {
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.18;
+  letter-spacing: 0.02em;
+
+  color: #2196f3;
+}
+
+.menu-email {
+  margin-top: 32px;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.02em;
+  color: #757575;
+}
+
+.menu-contact__item {
+  &:last-child {
+    margin-top: 32px;
+  }
+}
+
+.menu-soc {
+  display: flex;
+  align-items: center;
+  margin-top: 64px;
+}
+
+.menu-soc__item {
+  &:not(:last-child) {
+    border-right: 1px solid rgba(33, 33, 33, 0.2);
+  }
+  & + & {
+    margin-left: 10px;
+  }
+}
+
+.menu-soc__link {
+  padding-right: 10px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+
+  color: #2196f3;
+}
+
+.menu-soc__link {
+}
+
+.menu-soc__item:not(:last-child) {
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+}

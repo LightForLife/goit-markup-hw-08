@@ -1,7 +1,7 @@
 .header {
   border-bottom: 1px solid #ececec;
 
-  .container {
+  > .container {
     display: flex;
     align-items: center;
   }
@@ -15,6 +15,10 @@
 .navigation {
   display: flex;
   align-items: center;
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
 }
 
 .header-list__item {
@@ -23,7 +27,7 @@
   }
 }
 
-.navigation__logo {
+.header__logo {
   padding-top: 24px;
   padding-bottom: 24px;
 
@@ -84,6 +88,10 @@
 .contact-list {
   display: flex;
   margin-left: auto;
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
 }
 
 .contact-list__link {

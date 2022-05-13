@@ -21,12 +21,22 @@
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
-    <!-- <header class="header">
-      <div class="container">
+    <header class="header">
+      <div class="header__container container">
+        <a class="logo header__logo link" href="./index.html" lang="en">
+          <span class="logo__text">Web</span>Studio
+        </a>
+        <button
+          type="button"
+          class="header__menu-btn menu-btn js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg class="menu-btn__icon-open" width="40px" height="40px">
+            <use href="./images/symbol-defs.svg#icon-menu-open"></use>
+          </svg>
+        </button>
         <nav class="navigation">
-          <a class="logo navigation__logo link" href="./index.html" lang="en">
-            <span class="logo__text">Web</span>Studio
-          </a>
           <ul class="header-list list">
             <li class="header-list__item">
               <a class="header-list__link link current" href="./index.html">Студия</a>
@@ -56,7 +66,47 @@
           </li>
         </ul>
       </div>
-    </header> -->
+      <div class="mob-menu is-open js-menu-container" id="mobile-menu">
+        <div class="container">
+          <button class="mob-menu__btn-close js-close-menu">
+            <svg class="mob-menu__icon-close" width="40px" height="40px">
+              <use href="./images/symbol-defs.svg#icon-menu-close"></use>
+            </svg>
+          </button>
+          <nav class="menu-navigation">
+            <ul class="menu-navigation__list list">
+              <li class="menu-navigation__item">
+                <a class="menu-navigation__link link current" href="./index.html">Студия</a>
+              </li>
+              <li class="menu-navigation__item">
+                <a class="menu-navigation__link link" href="./portfolio.html">Портфолио</a>
+              </li>
+              <li class="menu-navigation__item">
+                <a class="menu-navigation__link link" href="">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <ul class="menu-contact list">
+            <li class="menu-contact__item">
+              <a class="menu-contact__link menu-tel link" href="tel:+380961111111"
+                >+38 096 111 11 11</a
+              >
+            </li>
+            <li class="menu-contact__item">
+              <a class="menu-contact__link menu-email link" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+          <ul class="menu-soc list">
+            <li class="menu-soc__item"><a class="menu-soc__link link" href="">Instagram</a></li>
+            <li class="menu-soc__item"><a class="menu-soc__link link" href="">Twitter</a></li>
+            <li class="menu-soc__item"><a class="menu-soc__link link" href="">Facebook</a></li>
+            <li class="menu-soc__item"><a class="menu-soc__link link" href="">LinkedIn</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
     <main>
       <!-- Hero -->
       <!-- <section class="hero">
@@ -527,6 +577,13 @@
         </form>
       </div>
     </div>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
