@@ -1,15 +1,25 @@
 .footer-container {
-  display: flex;
-  align-items: baseline;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: baseline;
+  }
 }
 
 .join {
-  margin-left: 70px;
+  @media screen and (max-width: 767px) {
+    margin-top: 60px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-left: 70px;
+  }
 }
 
 .join-list {
   display: flex;
   justify-content: center;
+
+  margin-top: 20px;
 }
 
 .join-item {
@@ -19,7 +29,7 @@
 }
 
 .join-title {
-  margin-bottom: 20px;
+  text-align: center;
 
   font-weight: 700;
   font-size: 14px;

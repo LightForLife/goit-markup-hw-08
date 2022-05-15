@@ -3,10 +3,14 @@
 
   font-weight: 700;
   font-size: 20px;
-  line-height: 1.15;
+  line-height: 1.5;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--first-main-color);
+
+  @media screen and (min-width: 1200px) {
+    line-height: 1.15;
+  }
 }
 
 .modal-field {
@@ -146,16 +150,18 @@
 }
 
 .check-text {
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   color: var(--second-main-color);
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 
 .conditions-link {
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
   text-decoration: none;
   color: var(--accent-text-color);
   border-bottom: 1px solid;

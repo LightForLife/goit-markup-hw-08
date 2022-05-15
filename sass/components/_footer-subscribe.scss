@@ -1,10 +1,15 @@
 .footer-form {
-  margin-left: 93px;
+  margin-top: 60px;
+  text-align: center;
+
+  @media screen and (min-width: 1200px) {
+    margin-left: 93px;
+    margin-top: 0;
+    text-align: left;
+  }
 }
 
 .subscribe-title {
-  margin-bottom: 20px;
-
   font-weight: 700;
   font-size: 14px;
   line-height: 16px;
@@ -14,7 +19,11 @@
 }
 
 .subscribe-field {
-  display: flex;
+  margin-top: 20px;
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
 }
 
 .subscribe_input {
@@ -40,9 +49,9 @@
 }
 
 .subscribe-btn {
-  display: inline-block;
+  // display: inline-block;
 
-  margin-left: 12px;
+  margin-top: 20px;
 
   padding-left: 28px;
   padding-top: 9px;
@@ -53,10 +62,21 @@
   &:focus {
     background: #188ce8;
   }
+
+  @media screen and (min-width: 768px) {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-left: 12px;
+    margin-top: 0;
+  }
 }
 
 .subscribe-icon {
-  display: inline-block;
+  display: inline-flex;
 
   margin-left: 10px;
 

@@ -3,10 +3,34 @@
   padding-bottom: 60px;
 
   background: var(--second-bg-coor);
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
+.footer-tablet {
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    justify-content: space-around;
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-grow: 1;
+    align-items: baseline;
+  }
 }
 
 .footer-box {
-  flex-grow: 1;
+  text-align: center;
+
+  @media screen and (min-width: 1200px) {
+    flex-grow: 1;
+  }
 }
 
 .footer-logo {
@@ -15,15 +39,14 @@
 
   font-family: 'Raleway';
   font-style: normal;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
+  font-size: 24px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   color: #ffffff;
 }
 
 .footer-item {
-  margin-bottom: 9px;
+  margin-bottom: 8px;
 
   &:last-child {
     margin-bottom: 0;
