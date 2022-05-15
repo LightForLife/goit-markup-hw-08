@@ -27,7 +27,7 @@
 }
 
 .subscribe_input {
-  min-width: 358px;
+  min-width: 100%;
   height: 50px;
   padding-top: 15px;
   padding-bottom: 15px;
@@ -45,6 +45,14 @@
     line-height: 1.25;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
+  }
+
+  @media screen and (min-width: 480px) {
+    min-width: 450px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    min-width: 358px;
   }
 }
 

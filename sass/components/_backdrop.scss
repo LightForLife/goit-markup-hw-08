@@ -9,6 +9,7 @@
   opacity: 1;
   background-color: rgba(0, 0, 0, 0.2);
   transition: opacity var(--timing-function), visibility 300ms;
+  overflow: scroll;
 }
 
 .backdrop.is-hidden {

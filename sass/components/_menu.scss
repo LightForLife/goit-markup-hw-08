@@ -20,6 +20,7 @@
 }
 
 .mob-menu {
+  display: block;
   position: fixed;
   top: 0;
   left: 0;
@@ -37,12 +38,13 @@
 
   transform: translateX(100%);
   transition: transform 250ms ease-in-out;
-  opacity: 0;
+
+  z-index: 5;
+  overflow: scroll;
 }
 
 .mob-menu.is-open {
   transform: translateX(0);
-  opacity: 1;
 }
 
 .mob-menu__btn-close {
@@ -98,6 +100,10 @@
   letter-spacing: 0.02em;
 
   color: #2196f3;
+
+  @media screen and (max-width: 480px) {
+    font-size: 24px;
+  }
 }
 
 .menu-email {
@@ -107,6 +113,9 @@
   line-height: 28px;
   letter-spacing: 0.02em;
   color: #757575;
+  @media screen and (max-width: 480px) {
+    font-size: 20px;
+  }
 }
 
 .menu-contact__item {
@@ -118,6 +127,8 @@
 .menu-soc {
   display: flex;
   align-items: center;
+  justify-content: start;
+  flex-wrap: wrap;
   margin-top: 64px;
 }
 
@@ -132,7 +143,7 @@
 }
 
 .menu-soc__link {
-  display: inline-block;
+  display: block;
   padding-right: 10px;
   font-weight: 500;
   font-size: 18px;
@@ -140,6 +151,10 @@
   letter-spacing: 0.02em;
 
   color: #2196f3;
+
+  @media screen and (max-width: 480px) {
+    font-size: 8px;
+  }
 }
 
 .menu-soc__link {
