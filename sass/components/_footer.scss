@@ -3,11 +3,6 @@
   padding-bottom: 60px;
 
   background: var(--second-bg-coor);
-
-  @media screen and (min-width: 1200px) {
-    padding-top: 94px;
-    padding-bottom: 94px;
-  }
 }
 
 .footer-tablet {
@@ -46,6 +41,7 @@
 }
 
 .footer-item {
+  font-style: normal;
   margin-bottom: 8px;
 
   &:last-child {
@@ -54,7 +50,7 @@
 }
 
 .footer-address {
-  color: #ffffff;
+  color: var(--first-bg-coor);
 }
 
 .footer-contact {

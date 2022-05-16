@@ -46,7 +46,7 @@
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: #ffffff;
+  color: var(--first-bg-coor);
 
   @media screen and (min-width: 1200px) {
     font-size: 44px;
@@ -55,14 +55,5 @@
 }
 
 .hero__btn {
-  margin: 0 auto;
   padding: 10px 32px;
-
-  display: flex;
-  align-items: center;
-
-  &:hover,
-  &:focus {
-    background-color: #188ce8;
-  }
 }

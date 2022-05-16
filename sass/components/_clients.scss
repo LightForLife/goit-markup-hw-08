@@ -1,18 +1,3 @@
-.clients {
-  // margin-left: auto;
-  // margin-right: auto;
-  // background: var(--first-bg-coor);
-
-  @media screen and (min-width: 1200px) {
-    padding-top: 94px;
-    padding-bottom: 94px;
-  }
-}
-
-.clients-title {
-  margin-bottom: 30px;
-}
-
 .clients-list {
   display: flex;
   justify-content: center;
@@ -43,9 +28,9 @@
   min-height: 92px;
   justify-content: center;
   align-items: center;
-  border: 1px solid #afb1b8;
+  border: 1px solid var(--icon-fill);
   border-radius: 4px;
-  color: #afb1b8;
+  color: var(--icon-fill);
 
   transition: color var(--timing-function), border-color var(--timing-function);
 

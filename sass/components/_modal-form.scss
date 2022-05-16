@@ -62,7 +62,7 @@
   line-height: 1.17;
   letter-spacing: 0.01em;
 
-  color: #757575;
+  color: var(--second-main-color);
 
   &:focus-within,
   &:not(:placeholder-shown) {
@@ -92,7 +92,7 @@
   line-height: 1.17;
   letter-spacing: 0.01em;
 
-  color: #757575;
+  color: var(--second-main-color);
 
   &::placeholder {
     font-size: 12px;
@@ -175,32 +175,8 @@
 
 .modal-btn {
   display: block;
-
-  margin: 0 auto;
   padding-top: 10px;
   padding-right: 55px;
   padding-bottom: 10px;
   padding-left: 56px;
-
-  min-width: 200px;
-  height: 50px;
-
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.88;
-  letter-spacing: 0.06em;
-
-  cursor: pointer;
-  border: none;
-
-  background: var(--accent-text-color);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  color: var(--first-bg-coor);
-  transition: background-color var(--timing-function);
-
-  &:hover,
-  &:focus {
-    background-color: #188ce8;
-  }
 }

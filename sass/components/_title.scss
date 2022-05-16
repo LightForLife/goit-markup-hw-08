@@ -7,9 +7,9 @@
   line-height: 1.18;
   letter-spacing: 0.03em;
 
-  @media screen and (max-width: 1200px) {
-    // margin-bottom: 30px;
-    // font-size: 28px;
-    // line-height: 1.18;
+  @media screen and (min-width: 1200px) {
+    font-size: 36px;
+    line-height: 1.17;
+    margin-bottom: 50px;
   }
 }
