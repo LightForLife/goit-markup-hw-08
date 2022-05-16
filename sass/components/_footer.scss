@@ -8,6 +8,7 @@
 .footer-tablet {
   @media screen and (min-width: 768px) {
     display: flex;
+    align-items: baseline;
   }
 
   @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -16,7 +17,6 @@
 
   @media screen and (min-width: 1200px) {
     flex-grow: 1;
-    align-items: baseline;
   }
 }
 
@@ -32,20 +32,22 @@
   display: block;
   margin-bottom: 20px;
 
-  font-family: 'Raleway';
-  font-style: normal;
-  font-size: 24px;
-  line-height: 1.17;
-  letter-spacing: 0.03em;
-  color: #ffffff;
+  color: var(--first-bg-coor);
 }
 
 .footer-item {
   font-style: normal;
   margin-bottom: 8px;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
 
   &:last-child {
     margin-bottom: 0;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 9px;
   }
 }
 
@@ -58,12 +60,9 @@
 }
 
 .contact-text {
-  display: block;
-
-  transition: color var(--timing-function);
-
   &:hover,
   &:focus {
     color: var(--accent-text-color);
   }
+  transition: color var(--timing-function);
 }
