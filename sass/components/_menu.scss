@@ -45,7 +45,9 @@
   transition: transform 250ms ease-in-out;
 
   z-index: 5;
-  overflow: scroll;
+
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 .mob-menu.is-open {
@@ -138,6 +140,7 @@
   justify-content: start;
   flex-wrap: wrap;
   margin-top: 64px;
+  flex-grow: 1;
 }
 
 .menu-soc__item {
@@ -147,12 +150,11 @@
     border-right: 1px solid rgba(33, 33, 33, 0.2);
     margin-right: 10px;
   }
-  &:last-child {
-  }
+  // flex-grow: 2;
 }
 
 .menu-soc__link {
-  display: inline-block;
+  display: block;
   padding-right: 10px;
   font-weight: 500;
   font-size: 18px;

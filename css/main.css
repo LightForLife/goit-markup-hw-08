@@ -1498,7 +1498,8 @@ img {
   transition: transform 250ms ease-in-out;
   transition: transform 250ms ease-in-out, -webkit-transform 250ms ease-in-out;
   z-index: 5;
-  overflow: scroll;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 .mob-menu.is-open {
@@ -1603,6 +1604,9 @@ img {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin-top: 64px;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
 
 .menu-soc__item {
@@ -1613,8 +1617,9 @@ img {
   border-right: 1px solid rgba(33, 33, 33, 0.2);
   margin-right: 10px;
 }
+
 .menu-soc__link {
-  display: inline-block;
+  display: block;
   padding-right: 10px;
   font-weight: 500;
   font-size: 18px;
