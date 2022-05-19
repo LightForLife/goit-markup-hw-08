@@ -99,10 +99,12 @@
   background-color: rgba(33, 150, 243, 0.9);
   color: var(--first-bg-coor);
 
-  overflow-y: scroll;
-
   .portfolio-link:hover &,
   .portfolio-link:focus & {
     transform: translateY(0);
+  }
+
+  @media screen and (max-width: 767px) {
+    overflow-y: scroll;
   }
 }

@@ -1466,11 +1466,15 @@ img {
   padding: 63px 24px;
   background-color: rgba(33, 150, 243, 0.9);
   color: var(--first-bg-coor);
-  overflow-y: scroll;
 }
 .portfolio-link:hover .thumb-text, .portfolio-link:focus .thumb-text {
   -webkit-transform: translateY(0);
           transform: translateY(0);
+}
+@media screen and (max-width: 767px) {
+  .thumb-text {
+    overflow-y: scroll;
+  }
 }
 
 .menu-btn {
