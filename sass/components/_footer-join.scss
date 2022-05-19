@@ -37,6 +37,10 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--first-bg-coor);
+
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+  }
 }
 
 .join-link {

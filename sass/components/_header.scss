@@ -141,9 +141,23 @@
   }
 }
 
+.contact-list__email {
+  @media screen and (max-width: 1199px) {
+    padding-top: 16px;
+  }
+}
+
+.contact-list__tel {
+  @media screen and (max-width: 1199px) {
+    padding-bottom: 16px;
+  }
+}
+
 .contact-list__item {
   @media screen and (max-width: 1199px) {
-    margin-top: 10px;
+    & + & {
+      margin-top: 10px;
+    }
   }
 
   @media screen and (min-width: 1200px) {
