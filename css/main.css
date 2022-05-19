@@ -425,7 +425,6 @@ img {
   transition: opacity var(--timing-function), visibility 300ms;
   overflow: scroll;
 }
-
 .backdrop.is-hidden {
   opacity: 0;
   pointer-events: none;
@@ -1532,8 +1531,6 @@ img {
   background: var(--first-bg-coor);
   -webkit-box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
           box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
-  -webkit-transform: translateX(100%);
-          transform: translateX(100%);
   -webkit-transition: -webkit-transform 250ms ease-in-out;
   transition: -webkit-transform 250ms ease-in-out;
   transition: transform 250ms ease-in-out;
@@ -1541,11 +1538,11 @@ img {
   z-index: 5;
   overflow-y: scroll;
   overflow-x: hidden;
+  visibility: hidden;
 }
 
 .mob-menu.is-open {
-  -webkit-transform: translateX(0);
-          transform: translateX(0);
+  visibility: visible;
 }
 
 .mob-menu__btn-close {
