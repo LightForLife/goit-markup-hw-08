@@ -54,10 +54,10 @@
   overflow-y: scroll;
   overflow-x: hidden;
   visibility: hidden;
-}
 
-.mob-menu.is-open {
-  visibility: visible;
+  &.is-open {
+    visibility: visible;
+  }
 }
 
 .mob-menu__btn-close {
